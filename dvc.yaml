@@ -1,0 +1,22 @@
+stages:
+  convert_to_jpg_set2:
+    cmd: python -m bird_detector.data.preprocessing_pipelines convert_to_jpg_and_resize --set-id 2 --output-dir data/interim/jpg256_set2 --jpg-quality 95 --target-size 256
+    deps:
+      - bird_detector/data/data_loaders.py
+      - bird_detector/data/preprocessing_pipelines.py
+      - bird_detector/data/raw_image_utils.py
+      - data/raw/set_2.yaml
+    outs:
+      - data/interim/jpg256_set2:
+          persist: true
+
+  convert_to_jpg_set3:
+    cmd: python -m bird_detector.data.preprocessing_pipelines convert_to_jpg_and_resize --set-id 3 --output-dir data/interim/jpg256_set3 --jpg-quality 95 --target-size 256
+    deps:
+      - bird_detector/data/data_loaders.py
+      - bird_detector/data/preprocessing_pipelines.py
+      - bird_detector/data/raw_image_utils.py
+      - data/raw/set_3.yaml
+    outs:
+      - data/interim/jpg256_set3:
+          persist: true 
