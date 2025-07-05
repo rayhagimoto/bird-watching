@@ -1,0 +1,6 @@
+outs:
+  - path: jpg256_set3
+    hash: md5
+    md5: fbcb918cff8154412a65c2c84c83f38f.dir
+    size: 141594333
+    nfiles: 4029 
