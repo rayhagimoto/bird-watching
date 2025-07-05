@@ -2,4 +2,4 @@
 # This file defines the data sources and parameters for set 2
 set_id: 2
 description: "Bird detection dataset set 2"
-path: "E:/BIRDS/set_2"  # Path to raw ARW files for set 2 
+path: "D:/BIRDS/set_2"  # Path to raw ARW files for set 2 
