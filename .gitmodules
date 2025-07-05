@@ -1,0 +1,3 @@
+[submodule "bird_detector"]
+	path = bird_detector
+	url = https://github.com/rayhagimoto/bird-detector.git
