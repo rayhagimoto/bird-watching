@@ -1,0 +1,7 @@
+data:
+  path: 'data/interim/jpg256_set3'
+  image_size: 64
+model:
+  alpha: 0.05
+  ema_wait: 5 # Number of pictures to EMA before starting to do inference
+  inf_wait: 200 # Number of pictures to EMA before starting to do inference

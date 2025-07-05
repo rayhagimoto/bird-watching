@@ -1,0 +1,39 @@
+--extra-index-url https://download.pytorch.org/whl/cu128
+# Core ML and Data Science
+torch
+torchvision
+numpy
+pandas
+scipy
+scikit-learn
+
+# Image Processing
+Pillow
+opencv-python
+
+# Version Control and Experiment Tracking
+dvc
+mlflow
+
+# Jupyter and Notebooks
+jupyter
+jupytext
+ipykernel
+
+# Visualization
+matplotlib
+seaborn
+plotly
+
+# Configuration and Utilities
+PyYAML
+python-dotenv
+
+# Development and Testing
+pytest
+black
+flake8
+
+# Optional: For advanced data processing
+tqdm
+
