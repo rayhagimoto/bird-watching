@@ -1,0 +1,29 @@
+schema: '2.0'
+stages:
+  convert_to_jpg_set0:
+    cmd: python -m bird_detector.data.preprocessing_pipelines 
+      convert_to_jpg_and_resize --set-id 0 --output-dir data/interim/jpg256_set0
+      --jpg-quality 95 --target-size 256
+    deps:
+    - path: bird_detector/data/data_loaders.py
+      hash: md5
+      md5: e4d24ca98b945c184be1b1b15f7ff137
+      size: 1583
+    - path: bird_detector/data/preprocessing_pipelines.py
+      hash: md5
+      md5: 0649166e726c6df266f48762605c6315
+      size: 8052
+    - path: bird_detector/data/raw_image_utils.py
+      hash: md5
+      md5: 22bbfa881a8e6e267a3534ab7d32d034
+      size: 2632
+    - path: data/raw/set_0.yaml
+      hash: md5
+      md5: 3d2eda77996cc72d50fc430a0f96a2e3
+      size: 228
+    outs:
+    - path: data/interim/jpg256_set0
+      hash: md5
+      md5: a7c2cfa2141be0f6690dcc824e9ed244.dir
+      size: 46347119
+      nfiles: 1408
