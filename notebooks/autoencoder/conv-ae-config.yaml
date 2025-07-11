@@ -1,0 +1,12 @@
+seed: 42
+model:
+data:
+  image_size: 64
+  train_frac: 0.3
+  val_frac: 0.3
+  path: 'data/interim/jpg256_set3/'
+training:
+  loss_fn: 'log_mse'
+  optimizer: adam
+  lr: 5.0e-4
+model_metadata: ''
