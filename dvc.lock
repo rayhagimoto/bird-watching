@@ -27,3 +27,26 @@ stages:
       md5: a7c2cfa2141be0f6690dcc824e9ed244.dir
       size: 46347119
       nfiles: 1408
+  convert_to_jpg_set4:
+    cmd: python -m bird_detector.data.preprocessing_pipelines 
+      process_jpg_to_jpg256 --set-id 4 --output-dir data/interim/jpg256_set4 
+      --jpg-quality 95 --target-size 256
+    deps:
+    - path: bird_detector/data/data_loaders.py
+      hash: md5
+      md5: 0fe2726d92d0c43ef4c0774d3bb350cb
+      size: 3449
+    - path: bird_detector/data/preprocessing_pipelines.py
+      hash: md5
+      md5: a04f18fee547f274a98dc61cb023e9d4
+      size: 15007
+    - path: data/raw/set_4.yaml
+      hash: md5
+      md5: a5fc0bc040457b201a902b983863d237
+      size: 120
+    outs:
+    - path: data/interim/jpg256_set4
+      hash: md5
+      md5: 2cd02dea5aa801757f1fff7bd701cc52.dir
+      size: 265719026
+      nfiles: 2272

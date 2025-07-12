@@ -30,4 +30,14 @@ stages:
       - data/raw/set_3.yaml
     outs:
       - data/interim/jpg256_set3:
+          persist: true
+
+  convert_to_jpg_set4:
+    cmd: python bird_detector/data/preprocessing_pipelines.py process_jpg_to_jpg256 --set-id 4 --output-dir data/interim/jpg256_set4 --jpg-quality 95 --target-size 256
+    deps:
+      - bird_detector/data/data_loaders.py
+      - bird_detector/data/preprocessing_pipelines.py
+      - data/raw/set_4.yaml
+    outs:
+      - data/interim/jpg256_set4:
           persist: true 

@@ -9,9 +9,9 @@ model:
   upsample_mode: 'nearest'
 data:
   image_size: 64
-  train_frac: 0.6
-  val_frac: 0.1
-  path: 'data\interim\jpg256_set3'
+  train_frac: 0.95
+  val_frac: 0.05
+  path: 'data\interim\jpg256_set4'
 training:
   loss_fn: 'log_mse'
   optimizer: adam
