@@ -1,12 +1,20 @@
 seed: 42
 model:
+  latent_dim: 2
+  enc_channels: [16, 32, 64, 8]
+  enc_kernel_sizes: [3, 3, 3, 3]
+  dec_channels: [64, 32, 16, 3]
+  dec_kernel_sizes: [3, 3, 3, 3]
+  pool_kernel: 2
+  upsample_mode: 'nearest'
 data:
   image_size: 64
-  train_frac: 0.3
-  val_frac: 0.3
-  path: 'data/interim/jpg256_set3/'
+  train_frac: 0.6
+  val_frac: 0.1
+  path: 'data\interim\jpg256_set3'
 training:
   loss_fn: 'log_mse'
   optimizer: adam
   lr: 5.0e-4
+  epochs: 50
 model_metadata: ''
